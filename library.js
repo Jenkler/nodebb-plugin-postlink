@@ -2,31 +2,28 @@
 	"use strict";
 	var postlink = {};
 
-	
-	postlink.addAdminNavigation = function(header, callback) {
-	header.plugins.push({
-	route: '/plugins/postlink',
-	icon: 'fa-link',
-	name: 'Postlink'
-	});
-	callback(null, header);
-	};
-	
 	function renderAdmin(req, res, next)
 	{
 		res.render('admin/postlink', {});
 	}
 
+	postlink.adminBuild = function(header, callback)
+	{
+		header.plugins.push({
+			route: '/postlink',
+			icon: 'fa-link',
+			name: 'Postlink'
+		});
+		callback(null, header);
+	};
+
 	postlink.init = function(params, callback)
 	{
-		params.router.get('/admin/plugins/postlink', params.middleware.admin.buildHeader, renderAdmin);
-		params.router.get('/api/admin/plugins/postlink', renderAdmin);
+		params.router.get('/admin/postlink', params.middleware.admin.buildHeader, renderAdmin);
+		params.router.get('/api/admin/postlink', renderAdmin);
 		callback();
 	};
 
-	
-	
-	
 	postlink.parse = function(data, callback)
 	{
 		if (!data || !data.postData || !data.postData.content)
@@ -44,10 +41,7 @@
 				return 'href="'+proxy_url+encodeURIComponent(b);
 			});
 		}
-//		console.log(data.postData);
-
 		callback(null, data);
 	};
-
 	module.exports = postlink;
 }(module));

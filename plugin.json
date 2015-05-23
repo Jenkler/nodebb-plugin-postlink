@@ -5,15 +5,9 @@
 	"url": "https://github.com/Jenkler/nodebb-plugin-postlink",
 	"library": "./library.js",
 	"hooks": [
-		{
-			"hook": "filter:admin.header.build", "method": "addAdminNavigation"
-		},
-		{
-			"hook": "filter:parse.post", "method": "parse", "priority": 9
-		},
-		{
-			"hook": "static:app.load", "method": "init"
-		}
+		{ "hook": "static:app.load", "method": "init" },
+		{ "hook": "filter:parse.post", "method": "parse", "priority": 9 },
+		{ "hook": "filter:admin.header.build", "method": "adminBuild" }
 	],
 	"nbbpm": {
 		"compatibility": "^0.6.0"
