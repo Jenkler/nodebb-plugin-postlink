@@ -1,5 +1,6 @@
 (function(module) {
 	"use strict";
+	var meta = module.parent.require('./meta');
 	var postlink = {};
 
 	function renderAdmin(req, res, next)
@@ -26,19 +27,18 @@
 
 	postlink.parse = function(data, callback)
 	{
-		if (!data || !data.postData || !data.postData.content)
+		if (!data || !data.postData || !data.postData.content || !meta.config['postlink:urlprefix'])
 		{
 			return callback(null, data);
 		}
 
-		var proxy_url = 'https://www.google.com/?q=';
 		var regex = /href="([^\'\"]+)/g;
-
+		var url_prefix = meta.config['postlink:urlprefix'];
 		if(data.postData.content.match(regex))
 		{
 			data.postData.content = data.postData.content.replace(regex, function(a, b)
 			{
-				return 'href="'+proxy_url+encodeURIComponent(b);
+				return 'href="'+url_prefix+encodeURIComponent(b);
 			});
 		}
 		callback(null, data);
