@@ -6,30 +6,10 @@
 	"library": "./library.js",
 	"hooks": [
 		{
-			"hook": "static:app.load", "method": "init"
-		},
-		{
-			"hook": "filter:user.settings", "method": "addUserSettings"
-		},
-		{
-			"hook": "filter:user.getSettings", "method": "getUserSettings"
-		},
-		{
-			"hook": "action:user.saveSettings", "method": "saveUserSettings"
-		},
-		{
-			"hook": "filter:header.build", "method": "addNavigation"
-		},
-		{
-			"hook": "filter:admin.header.build", "method": "addAdminNavigation"
-		},
-		{
-			"hook": "filter:admin.scripts.get", "method": "addAdminScripts"
+			"hook": "filter:parse.post", "method": "parse", "priority": 6
 		}
 	],
-	"staticDir": "./public",
-	"templates": "./templates",
 	"nbbpm": {
-		{ "compatibility": "^0.6.0" }
+		"compatibility": "^0.6.0"
 	}
 }
