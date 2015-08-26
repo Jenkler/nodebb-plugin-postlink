@@ -26,7 +26,7 @@
     "url": "https://github.com/Jenkler/nodebb-plugin-postlink/issues"
   },
   "nbbpm": {
-    "compatibility": "^0.6.0"
+    "compatibility": "^0.7.0"
   },
   "readme": "",
   "readmeFilename": "README.md",

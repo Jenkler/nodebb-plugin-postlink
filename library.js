@@ -38,6 +38,8 @@
 		{
 			data.postData.content = data.postData.content.replace(regex, function(a, b)
 			{
+				var pattern = /^((http|https):\/\/)/;
+				if(!pattern.test(b)) b = "http://" + b;
 				return 'href="'+url_prefix+encodeURIComponent(b);
 			});
 		}
