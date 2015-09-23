@@ -12,5 +12,5 @@
 	"nbbpm": {
 		"compatibility": "^0.8.0"
 	},
-	"templates": "./templates"
+	"templates": "templates"
 }
