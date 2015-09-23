@@ -1,6 +1,8 @@
+"use strict";
+
+var meta = module.parent.require('./meta');
+
 (function(module) {
-	"use strict";
-	var meta = module.parent.require('./meta');
 	var postlink = {};
 
 	function renderAdmin(req, res, next)

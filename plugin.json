@@ -10,7 +10,7 @@
 		{ "hook": "filter:admin.header.build", "method": "adminBuild" }
 	],
 	"nbbpm": {
-		"compatibility": "^0.6.0"
+		"compatibility": "^0.8.0"
 	},
 	"templates": "./templates"
 }
