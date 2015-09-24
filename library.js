@@ -2,7 +2,8 @@
 
 var meta = module.parent.require('./meta');
 
-(function(module) {
+(function(module)
+{
 	var postlink = {};
 
 	function renderAdmin(req, res, next)
@@ -40,6 +41,8 @@ var meta = module.parent.require('./meta');
 		{
 			data.postData.content = data.postData.content.replace(regex, function(a, b)
 			{
+				var pattern = /(\.gif|\.jpg|\.jpeg|\.png|\.svg|youtube\.com)/i;
+				if(pattern.test(b)) return 'href="'+b;
 				var pattern = /^((http|https):\/\/)/;
 				if(!pattern.test(b)) b = "http://" + b;
 				return 'href="'+url_prefix+encodeURIComponent(b);
