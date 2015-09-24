@@ -1,6 +1,6 @@
 {
   "name": "nodebb-plugin-postlink",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A plugin that adds a prefix on postlinks.",
   "main": "library.js",
   "scripts": {
@@ -30,6 +30,6 @@
   },
   "readme": "",
   "readmeFilename": "README.md",
-  "_id": "nodebb-plugin-postlink@0.0.1",
-  "_from": "nodebb-plugin-postlink@~0.0.1"
+  "_id": "nodebb-plugin-postlink@0.0.2",
+  "_from": "nodebb-plugin-postlink@~0.0.2"
 }
