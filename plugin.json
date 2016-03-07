@@ -1,7 +1,7 @@
 {
 	"id": "nodebb-plugin-postlink",
 	"name": "NodeBB Postlink",
-	"description": "A plugin that adds a prefix on postlinks.",
+	"description": "A plugin that adds a prefix on links in posts.",
 	"url": "https://github.com/Jenkler/nodebb-plugin-postlink",
 	"library": "./library.js",
 	"hooks": [
@@ -10,7 +10,7 @@
 		{ "hook": "filter:admin.header.build", "method": "adminBuild" }
 	],
 	"nbbpm": {
-		"compatibility": "^0.9.0"
+		"compatibility": "^1.0.0"
 	},
 	"templates": "templates"
 }
