@@ -1,38 +1,30 @@
 {
-  "name": "nodebb-plugin-postlink",
-  "version": "0.0.5",
-  "description": "A plugin that adds a prefix on postlinks.",
+  "author": {
+    "email": "info@jenkler.com",
+    "name": "Jenkler"
+  },
+  "description": "A plugin that adds a prefix on postlinks",
+  "homepage": "https://github.com/Jenkler/nodebb-plugin-postlink",
+  "keywords": [
+    "nodebb",
+    "plugin",
+    "prefix",
+	"proxy",
+    "tracking",
+    "url"
+  ],
+  "license": "BSD-2-Clause",
   "main": "library.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "name": "nodebb-plugin-postlink",
+  "nbbpm": {
+    "compatibility": "^1.0.0"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Jenkler/nodebb-plugin-postlink.git"
   },
-  "keywords": [
-    "nodebb",
-    "plugin",
-    "url",
-    "tracking",
-    "proxy"
-  ],
-  "author": {
-    "name": "Jenkler",
-    "email": "info@jenkler.com"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "license": "BSD-2-Clause",
-  "bugs": {
-    "url": "https://github.com/Jenkler/nodebb-plugin-postlink/issues"
-  },
-  "nbbpm": {
-    "compatibility": "^1.0.0"
-  },
-  "readme": "# NodeBB Postlink - A plugin that adds a prefix on links in posts\n\nIf you need to add a prefix to outbound links in the posts\n\n## Installation\n\n    npm install nodebb-plugin-postlink\n",
-  "readmeFilename": "README.md",
-  "_id": "nodebb-plugin-postlink@0.0.5",
-  "_from": "nodebb-plugin-postlink@*",
-  "gitHead": "af8670b41a520b419dde210b8ae4750cf8d5cd34",
-  "homepage": "https://github.com/Jenkler/nodebb-plugin-postlink#readme",
-  "_shasum": "8c8bfe472f37e9a8f1e7254e7e8af7bcea52233f"
+  "version": "1.0.0"
 }
