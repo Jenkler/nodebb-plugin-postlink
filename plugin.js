@@ -1,6 +1,6 @@
 "use strict";
 
-const meta = module.parent.require('./meta');
+const meta = module.parent.require('./src/meta');
 const nconf = require.main.require('nconf');
 const url = require('url');
 
