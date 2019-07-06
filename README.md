@@ -4,4 +4,4 @@ If you need to add a prefix to outbound links in the posts
 
 ## Installation
 
-    npm install nodebb-plugin-postlink
+  npm install nodebb-plugin-postlink

@@ -35,7 +35,7 @@ exports.filterParsePost = function(data, callback) {
   callback(null, data);
 };
 exports.staticAppLoad = function(data, callback) {
-  console.log('Loading Jenkler Postlink plugin' + require('./package.json').version);
+  console.log('Loading Jenkler Postlink plugin ' + require('./package.json').version);
   data.router.get('/admin/postlink', data.middleware.admin.buildHeader, renderAdmin);
   data.router.get('/api/admin/postlink', renderAdmin);
   callback();
