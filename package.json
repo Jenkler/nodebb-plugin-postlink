@@ -1,9 +1,9 @@
 {
   "author": {
-    "email": "info@jenkler.com",
+    "email": "info@jenkler.se",
     "name": "Jenkler IT AB"
   },
-  "description": "A plugin that adds a prefix on postlinks",
+  "description": "A plugin that adds a prefix on urls in posts",
   "homepage": "https://github.com/Jenkler/nodebb-plugin-postlink",
   "keywords": [
     "nodebb",
@@ -13,10 +13,11 @@
     "tracking",
     "url"
   ],
+  "license" : "BSD-3-Clause",
   "main": "plugin.js",
   "name": "nodebb-plugin-postlink",
   "nbbpm": {
-    "compatibility": "^1.12.2"
+    "compatibility": "^1.17.2"
   },
   "repository": {
     "type": "git",
@@ -25,5 +26,5 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "version": "1.12.2"
+  "version": "1.17.20001"
 }

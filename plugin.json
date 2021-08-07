@@ -1,15 +1,18 @@
 {
-  "description": "A plugin that adds a prefix on links in posts",
+  "acpScripts": [ "admin.js" ],
+  "description": "A plugin that adds a prefix on urls in posts",
   "hooks": [
     { "hook": "filter:admin.header.build", "method": "filterAdminHeaderBuild" },
-    { "hook": "filter:parse.post", "method": "filterParsePost", "priority": 9 },
+    { "hook": "filter:post.getPosts", "method": "filterPostGetPosts" },
+    { "hook": "filter:post.getPostSummaryByPids", "method": "filterPostGetPostSummaryByPids" },
+    { "hook": "filter:teasers.get", "method": "filterTeasersGet" },
     { "hook": "static:app.load", "method": "staticAppLoad" }
   ],
   "id": "nodebb-plugin-postlink",
   "library": "plugin.js",
   "name": "NodeBB Postlink",
   "nbbpm": {
-    "compatibility": "^1.12.2"
+    "compatibility": "^1.17.2"
   },
   "templates": "templates",
   "url": "https://github.com/Jenkler/nodebb-plugin-postlink"
