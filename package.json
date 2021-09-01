@@ -17,7 +17,7 @@
   "main": "plugin.js",
   "name": "nodebb-plugin-postlink",
   "nbbpm": {
-    "compatibility": "^1.17.2"
+    "compatibility": "^1.18.0"
   },
   "repository": {
     "type": "git",
@@ -26,5 +26,5 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "version": "1.17.20001"
+  "version": "1.18.00001"
 }
